@@ -16,6 +16,14 @@ I explain with all the details how I build the project and my way of working.
 - [Running](#running)
 - [Commands](#commands)
 
+## Experiences
+
+- **Experience 0**: Template Experience
+
+- **Experience 1**: Testing the react-chartjs-2 for creating a radar chart
+- **Experience 2**: Creating a simple line chart using Chart.js
+- **Experience 3**: Creating a radar chart using Chart.js
+
 ## Links
 
 - [Tutorial Linking Chart.js](https://blog.bitsrc.io/customizing-chart-js-in-react-2199fa81530a)
