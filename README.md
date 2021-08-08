@@ -1,12 +1,10 @@
-# REACT APP TEMPLATE
+# LABORATORY REACT with Chart.js
 
 ## Goal
 
-This project is a template for building react-app with all my favorite tools already configured.
+On this laboratory, I am using `chart.js` in order to experiment charting on `React`.
 
-Obviously, the app is using the latest version of `react`. For avoiding the relative path, I modified the webpack and allowing the import with an alias. I also added the support for sass files.
-
-In addition, I added `prettier` and configured it for working well with `esLint`. Finally, I added the basic usefull package such as the router and the helmet.  
+On the first experiment, I am using `react-chartjs-2`. The library is a shortcut for Chart.js but does not provide everything from this library, so I skip `react-chartjs-2` quite fast and stick to the original one.
 
 ## Plan of the presentation
 
@@ -17,6 +15,10 @@ I explain with all the details how I build the project and my way of working.
 - [Development](#development)
 - [Running](#running)
 - [Commands](#commands)
+
+## Links
+
+- [Tutorial Linking Chart.js](https://blog.bitsrc.io/customizing-chart-js-in-react-2199fa81530a)
 
 ## Documentation
 #### Code documentation
