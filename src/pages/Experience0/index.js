@@ -2,42 +2,50 @@
  * @module Experience
  */
 
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useLayoutEffect, useRef } from 'react'
 
 const Chart = require('chart.js/dist/chart')
+
+const config = {
+  type: 'line',
+  options: {
+    responsive: true,
+    maintainAspectRatio: false
+  }
+}
+
+const data = {
+  labels: ['Jan', 'Feb', 'March'],
+  datasets: [
+    {
+      label: 'Sales',
+      data: [86, 67, 91]
+    }
+  ]
+}
+
+config.data = data
 
 /**
  * @function Experience
  * @return {Object} Return the dom
  */
 const Experience = () => {
+  const canvasRef = useRef()
   const chartRef = useRef()
 
+  useLayoutEffect(() => {
+    chartRef.current?.destroy()
+  })
+
   useEffect(() => {
-    const ctx = chartRef.current.getContext('2d')
-    // eslint-disable-next-line
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        // Bring in data
-        labels: ['Jan', 'Feb', 'March'],
-        datasets: [
-          {
-            label: 'Sales',
-            data: [86, 67, 91]
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-    })
+    const ctx = canvasRef.current.getContext('2d')
+    chartRef.current = new Chart(ctx, { ...config })
   })
 
   return (
     <div className="canvas">
-      <canvas id="chart" ref={chartRef} />
+      <canvas id="chart" ref={canvasRef} />
     </div>
   )
 }
