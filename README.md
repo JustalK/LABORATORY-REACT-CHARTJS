@@ -23,6 +23,9 @@ I explain with all the details how I build the project and my way of working.
 - **Experience 1**: Testing the react-chartjs-2 for creating a radar chart
 - **Experience 2**: Creating a simple line chart using Chart.js
 - **Experience 3**: Creating a radar chart using Chart.js
+- **Experience 4**: Using Object data
+- **Experience 5**: Multi data line chart using Object[] with hidden dataset
+- **Experience 6**: Add data dynamically
 
 ## Links
 
